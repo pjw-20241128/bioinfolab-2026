@@ -33,3 +33,15 @@ print("contig 개수:", len(lengths))
 print("전체 길이:", sum(lengths))
 print("가장 긴 contig:", max(lengths))
 print("N50:", n50(lengths))
+
+# 모든 contig 길이를 내림차순으로 정렬해 한 줄에 하나씩 저장
+if len(sys.argv) > 2:
+    out_file = sys.argv[2]
+else:
+    out_file = "doc/contig_lengths.txt"
+
+with open(out_file, "w") as f:
+    for length in sorted(lengths, reverse=True):
+        f.write(str(length) + "\n")
+
+print("contig 길이 저장:", out_file)

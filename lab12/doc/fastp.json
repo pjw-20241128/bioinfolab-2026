@@ -413,5 +413,5 @@
 		"overrepresented_sequences": {
 		}
 	},
-	"command": "fastp -i data/R1.fastq -I data/R2.fastq -o data/R1.trim.fastq -O data/R2.trim.fastq -q 20 -l 50 -j doc/fastp.json -h doc/fastp.html "
+	"command": "fastp -i data/R1.fastq -I data/R2.fastq -o data/R1.trim.fastq -O data/R2.trim.fastq -q 30 -l 100 -j doc/fastp.json -h doc/fastp.html "
 }
